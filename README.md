@@ -22,11 +22,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
+      "url": "https://bitbucket.org/simplifysoft/ebay-taxonomy-api.git"
     }
   ],
   "require": {
-    "GIT_USER_ID/GIT_REPO_ID": "*@dev"
+    "simplifysoft/ebay-taxonomy-api": "*@dev"
   }
 }
 ```
@@ -95,7 +95,7 @@ Class | Method | HTTP request | Description
 *CategoryTreeApi* | [**getCompatibilityProperties**](docs/Api/CategoryTreeApi.md#getcompatibilityproperties) | **GET** /category_tree/{category_tree_id}/get_compatibility_properties | Get Compatibility Properties
 *CategoryTreeApi* | [**getCompatibilityPropertyValues**](docs/Api/CategoryTreeApi.md#getcompatibilitypropertyvalues) | **GET** /category_tree/{category_tree_id}/get_compatibility_property_values | Get Compatibility Property Values
 *CategoryTreeApi* | [**getDefaultCategoryTreeId**](docs/Api/CategoryTreeApi.md#getdefaultcategorytreeid) | **GET** /get_default_category_tree_id | Get a Default Category Tree ID
-*CategoryTreeApi* | [**getItemAspectsForCategory**](docs/Api/CategoryTreeApi.md#getitemaspectsforcategory) | **GET** /category_tree/{category_tree_id}/get_item_aspects_for_category | 
+*CategoryTreeApi* | [**getItemAspectsForCategory**](docs/Api/CategoryTreeApi.md#getitemaspectsforcategory) | **GET** /category_tree/{category_tree_id}/get_item_aspects_for_category |
 
 
 ## Documentation For Models
@@ -133,13 +133,10 @@ Class | Method | HTTP request | Description
 
 - **Type**: OAuth
 - **Flow**: application
-- **Authorization URL**: 
-- **Scopes**: 
+- **Authorization URL**:
+- **Scopes**:
 - **https://api.ebay.com/oauth/api_scope**: View public data from eBay
 - **https://api.ebay.com/oauth/api_scope/metadata.insights**: View metadata insights such as aspect relevance.
 
 
 ## Author
-
-
-
