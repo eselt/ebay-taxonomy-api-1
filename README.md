@@ -19,12 +19,6 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
 
 ```json
 {
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://bitbucket.org/simplifysoft/ebay-taxonomy-api.git"
-    }
-  ],
   "require": {
     "simplifysoft/ebay-taxonomy-api": "*@dev"
   }
