@@ -1,4 +1,12 @@
 /vendor
 /.idea
+/.openapi-generator
 
 composer.lock
+
+
+# php-cs-fixer cache
+.php_cs.cache
+
+# PHPUnit cache
+.phpunit.result.cache
