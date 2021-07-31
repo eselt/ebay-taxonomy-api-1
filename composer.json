@@ -27,6 +27,7 @@
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
+        "ext-zlib": "*",
         "guzzlehttp/guzzle": "^6.2"
     },
     "require-dev": {

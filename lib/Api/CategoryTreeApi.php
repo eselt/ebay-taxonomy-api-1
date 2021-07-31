@@ -179,7 +179,7 @@ class CategoryTreeApi
                     if ('\OpenAPI\Client\Model\GetCategoriesAspectResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
-                        $content = (string) $response->getBody();
+                        $content = gzdecode((string) $response->getBody());
                     }
 
                     return [
@@ -193,7 +193,7 @@ class CategoryTreeApi
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
-                $content = (string) $response->getBody();
+                $content = gzdecode((string) $response->getBody());
             }
 
             return [
@@ -1027,7 +1027,7 @@ class CategoryTreeApi
                     if ('\OpenAPI\Client\Model\CategoryTree' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
-                        $content = (string) $response->getBody();
+                        $content = gzdecode((string) $response->getBody());
                     }
 
                     return [
@@ -1041,7 +1041,7 @@ class CategoryTreeApi
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
-                $content = (string) $response->getBody();
+                $content = gzdecode((string) $response->getBody());
             }
 
             return [
