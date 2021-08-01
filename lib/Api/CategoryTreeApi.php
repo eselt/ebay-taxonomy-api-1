@@ -183,7 +183,7 @@ class CategoryTreeApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetCategoriesAspectResponse', []),
+                        $content,//ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetCategoriesAspectResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1031,7 +1031,7 @@ class CategoryTreeApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CategoryTree', []),
+                        $content, //ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CategoryTree', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
